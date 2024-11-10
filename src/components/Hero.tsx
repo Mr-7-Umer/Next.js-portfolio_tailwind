@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
                   whitespace-nowrap
                 `}
               >
-                I'm
+                I&apos;m
               </p>
               <p
                 data-aos="zoom-in-up"

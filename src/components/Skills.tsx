@@ -11,7 +11,7 @@ const Skills = () => {
                 <br />
                 <br />
                 <p className='text-gray-500 pt-2'>
-                I'm passionate about using the latest technologies 
+                I&apos;m passionate about using the latest technologies 
                 to build modern,
                 scalable applications. 
                 Here are the technologies I work with.</p>
