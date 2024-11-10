@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    color: white;
+    background-color: black;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@layer components {
+  .menuLink {
+    @apply cursor-pointer hover:text-[#2d5fcb];
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .tags {
+    background-color: #da3e0f;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 3px 10px;
+    display : inline-block;
+    color : #fff;
+    font-size: 12px;
+  }
+
+  .tags:last-child{
+    margin-right: 0;
+  }
+
+  .tags:nth-child(2){
+    background-color: rgb(9, 174, 14);
+    
+  }
+  .tags:nth-child(3){
+    background-color: rgb(233, 177, 37);
+    
+  }
+  .tags:nth-child(4){
+    background-color: rgb(14, 88, 226);
+    
+  }
+
+  #hero {
+    /* Use the absolute path to the image in the public folder */
+    background-image: url('/banner_bg.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
   }
 }
